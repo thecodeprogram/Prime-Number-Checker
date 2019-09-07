@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="asalci" Class="linqDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(local);Initial Catalog=asalci;Integrated Security=True" SettingsObjectName="Asalci.Properties.Settings" SettingsPropertyName="asalciConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.sayilar" Member="sayilars">
+    <Type Name="sayilar">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="sayi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.temp" Member="temps">
+    <Type Name="temp">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="th" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="bas" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="son" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
